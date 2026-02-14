@@ -1,0 +1,22 @@
+
+undefined4 * __thiscall
+FUN_0040390d(void *this,undefined4 param_1,undefined4 param_2,undefined4 param_3,undefined4 *param_4
+            )
+
+{
+  int iVar1;
+  
+  *(undefined4 *)this = param_1;
+  *(undefined4 *)((int)this + 4) = 0;
+  FUN_00404857((int)this);
+  iVar1 = *(int *)((int)this + 4);
+  *(undefined4 *)(iVar1 + 0x10) = *(undefined4 *)*param_4;
+  *(undefined4 *)(iVar1 + 0x14) = 0;
+  **(undefined4 **)((int)this + 4) = param_2;
+  *(undefined4 *)(*(int *)((int)this + 4) + 4) = param_2;
+  *(undefined4 *)(*(int *)((int)this + 4) + 8) = param_2;
+  *(undefined1 *)(*(int *)((int)this + 4) + 0xc) = 0;
+  *(undefined1 *)(*(int *)((int)this + 4) + 0xd) = 0;
+  return this;
+}
+

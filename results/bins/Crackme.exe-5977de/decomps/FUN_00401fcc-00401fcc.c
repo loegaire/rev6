@@ -1,0 +1,192 @@
+
+void __thiscall FUN_00401fcc(void *this,uint *param_1)
+
+{
+  int *piVar1;
+  uint uVar2;
+  uint uVar3;
+  uint *puVar4;
+  uint uVar5;
+  uint uVar6;
+  uint uVar7;
+  uint uVar8;
+  uint uVar9;
+  uint uVar10;
+  int iVar11;
+  uint *puVar12;
+  int iVar13;
+  int local_3c;
+  uint local_38;
+  uint local_34;
+  uint local_30;
+  uint local_2c;
+  uint local_28;
+  uint local_24;
+  uint local_20;
+  uint local_1c;
+  uint local_18;
+  uint local_14;
+  uint local_10;
+  uint local_8;
+  
+  if (((uint *)((int)this + 0x3cU) < param_1) || (param_1 + 0xf < this)) {
+    puVar4 = this;
+    puVar12 = param_1;
+    for (iVar11 = 0x10; iVar11 != 0; iVar11 = iVar11 + -1) {
+      *puVar12 = *puVar4;
+      puVar4 = puVar4 + 1;
+      puVar12 = puVar12 + 1;
+    }
+  }
+  else {
+    iVar11 = 0x10;
+    puVar4 = param_1;
+    do {
+      *puVar4 = *(uint *)((int)puVar4 + ((int)this - (int)param_1));
+      puVar4 = puVar4 + 1;
+      iVar11 = iVar11 + -1;
+    } while (iVar11 != 0);
+  }
+  local_10 = *param_1;
+  uVar2 = param_1[4];
+  local_14 = param_1[8];
+  uVar3 = param_1[5];
+  uVar8 = param_1[0xd];
+  local_18 = param_1[1];
+  local_1c = param_1[9];
+  local_20 = param_1[6];
+  local_24 = param_1[2];
+  local_28 = param_1[0xe];
+  local_2c = param_1[10];
+  local_30 = param_1[7];
+  local_34 = param_1[3];
+  local_8 = param_1[0xf];
+  uVar7 = param_1[0xc];
+  local_38 = param_1[0xb];
+  local_3c = 10;
+  do {
+    uVar7 = uVar7 ^ local_10 + uVar2;
+    uVar7 = uVar7 >> 0x10 | uVar7 << 0x10;
+    local_14 = local_14 + uVar7;
+    uVar5 = local_14 ^ uVar2;
+    uVar5 = uVar5 >> 0x14 | uVar5 << 0xc;
+    local_10 = local_10 + uVar2 + uVar5;
+    uVar7 = local_10 ^ uVar7;
+    uVar2 = uVar7 >> 0x18 | uVar7 << 8;
+    local_14 = uVar2 + local_14;
+    uVar5 = local_14 ^ uVar5;
+    uVar5 = uVar5 >> 0x19 | uVar5 << 7;
+    uVar8 = uVar8 ^ local_18 + uVar3;
+    uVar8 = uVar8 >> 0x10 | uVar8 << 0x10;
+    local_1c = local_1c + uVar8;
+    uVar7 = local_1c ^ uVar3;
+    uVar7 = uVar7 >> 0x14 | uVar7 << 0xc;
+    local_18 = local_18 + uVar3 + uVar7;
+    uVar8 = local_18 ^ uVar8;
+    uVar8 = uVar8 >> 0x18 | uVar8 << 8;
+    local_1c = uVar8 + local_1c;
+    uVar7 = local_1c ^ uVar7;
+    uVar3 = uVar7 >> 0x19 | uVar7 << 7;
+    local_28 = local_24 + local_20 ^ local_28;
+    uVar7 = local_28 >> 0x10 | local_28 << 0x10;
+    local_2c = local_2c + uVar7;
+    uVar9 = local_2c ^ local_20;
+    uVar10 = uVar9 >> 0x14 | uVar9 << 0xc;
+    local_24 = local_24 + local_20 + uVar10;
+    uVar7 = local_24 ^ uVar7;
+    uVar9 = uVar7 >> 0x18 | uVar7 << 8;
+    local_2c = uVar9 + local_2c;
+    uVar10 = local_2c ^ uVar10;
+    uVar7 = uVar10 >> 0x19 | uVar10 << 7;
+    local_8 = local_34 + local_30 ^ local_8;
+    uVar6 = local_8 >> 0x10 | local_8 << 0x10;
+    local_38 = local_38 + uVar6;
+    uVar10 = local_38 ^ local_30;
+    uVar10 = uVar10 >> 0x14 | uVar10 << 0xc;
+    local_34 = local_34 + local_30 + uVar10;
+    uVar6 = local_34 ^ uVar6;
+    uVar6 = uVar6 >> 0x18 | uVar6 << 8;
+    local_38 = uVar6 + local_38;
+    uVar10 = local_38 ^ uVar10;
+    uVar10 = uVar10 >> 0x19 | uVar10 << 7;
+    local_10 = local_10 + uVar3;
+    uVar6 = local_10 ^ uVar6;
+    uVar6 = uVar6 >> 0x10 | uVar6 << 0x10;
+    local_2c = uVar6 + local_2c;
+    uVar3 = local_2c ^ uVar3;
+    uVar3 = uVar3 >> 0x14 | uVar3 << 0xc;
+    local_10 = local_10 + uVar3;
+    uVar6 = uVar6 ^ local_10;
+    local_8 = uVar6 >> 0x18 | uVar6 << 8;
+    local_2c = local_2c + local_8;
+    uVar3 = uVar3 ^ local_2c;
+    local_18 = local_18 + uVar7;
+    uVar2 = uVar2 ^ local_18;
+    uVar3 = uVar3 >> 0x19 | uVar3 << 7;
+    uVar6 = uVar2 >> 0x10 | uVar2 << 0x10;
+    local_38 = local_38 + uVar6;
+    uVar7 = local_38 ^ uVar7;
+    uVar2 = uVar7 >> 0x14 | uVar7 << 0xc;
+    local_18 = uVar2 + local_18;
+    uVar6 = local_18 ^ uVar6;
+    uVar7 = uVar6 >> 0x18 | uVar6 << 8;
+    local_38 = uVar7 + local_38;
+    uVar2 = local_38 ^ uVar2;
+    local_20 = uVar2 >> 0x19 | uVar2 << 7;
+    local_24 = local_24 + uVar10;
+    uVar8 = uVar8 ^ local_24;
+    uVar2 = uVar8 >> 0x10 | uVar8 << 0x10;
+    local_14 = local_14 + uVar2;
+    uVar10 = local_14 ^ uVar10;
+    uVar10 = uVar10 >> 0x14 | uVar10 << 0xc;
+    local_24 = local_24 + uVar10;
+    uVar2 = local_24 ^ uVar2;
+    uVar8 = uVar2 >> 0x18 | uVar2 << 8;
+    local_14 = uVar8 + local_14;
+    uVar10 = local_14 ^ uVar10;
+    local_30 = uVar10 >> 0x19 | uVar10 << 7;
+    local_34 = local_34 + uVar5;
+    uVar9 = uVar9 ^ local_34;
+    uVar2 = uVar9 >> 0x10 | uVar9 << 0x10;
+    local_1c = local_1c + uVar2;
+    uVar5 = local_1c ^ uVar5;
+    uVar5 = uVar5 >> 0x14 | uVar5 << 0xc;
+    local_34 = local_34 + uVar5;
+    uVar2 = local_34 ^ uVar2;
+    local_28 = uVar2 >> 0x18 | uVar2 << 8;
+    local_1c = local_1c + local_28;
+    uVar5 = local_1c ^ uVar5;
+    uVar2 = uVar5 >> 0x19 | uVar5 << 7;
+    local_3c = local_3c + -1;
+  } while (local_3c != 0);
+  param_1[0xd] = uVar8;
+  param_1[4] = uVar2;
+  param_1[5] = uVar3;
+  param_1[0xe] = local_28;
+  *param_1 = local_10;
+  param_1[8] = local_14;
+  param_1[6] = local_20;
+  param_1[10] = local_2c;
+  param_1[1] = local_18;
+  param_1[9] = local_1c;
+  param_1[7] = local_30;
+  param_1[0xf] = local_8;
+  iVar13 = (int)this - (int)param_1;
+  param_1[2] = local_24;
+  param_1[0xb] = local_38;
+  param_1[0xc] = uVar7;
+  param_1[3] = local_34;
+  iVar11 = 0x10;
+  do {
+    *param_1 = *param_1 + *(int *)((int)param_1 + iVar13);
+    param_1 = param_1 + 1;
+    iVar11 = iVar11 + -1;
+  } while (iVar11 != 0);
+  piVar1 = (int *)((int)this + 0x30);
+  *piVar1 = *piVar1 + 1;
+  if (*piVar1 == 0) {
+    *(int *)((int)this + 0x34) = *(int *)((int)this + 0x34) + 1;
+  }
+  return;
+}
+
